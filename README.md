@@ -16,7 +16,7 @@ Username support for better conversation tracking
 gcc unix_server.c -o unix_server
 ./unix_server
 ```
-#### **Run the client:**
+#### Run the client:
 ```sh
 gcc unix_client.c -o unix_client
 ./unix_client
@@ -25,7 +25,7 @@ gcc unix_client.c -o unix_client
 ---
 
 ### Internet Domain Socket (IDS)
-#### Run the server:**
+#### Run the server:
 ```sh
 gcc internet_server.c -o internet_server
 ./internet_server
@@ -37,17 +37,12 @@ gcc internet_client.c -o internet_client
 ```
 
  By default, the internet socket server runs on port `8080`. You can modify it in the source code.
-
----
-
 ##  How to Use
-1️⃣ Start the server first.  
-2️⃣ Start one or more clients.  
-3️⃣ Each client enters a username before chatting.  
-4️⃣ Type messages and press `Enter` to send.  
-5️⃣ Type exit to disconnect from the chat.  
-
----
+Start the server first.  
+Start one or more clients.  
+Each client enters a username before chatting.  
+Type messages and press `Enter` to send.  
+Type exit to disconnect from the chat.  
 
 ##  Modifications & Enhancements
 - You can change the socket type (UDS/IDS) based on your needs.
