@@ -12,7 +12,7 @@
 // Function to handle server shutdown
 void handle_exit(int signum) {
     unlink(SOCKET_PATH);
-    printf("\n🚀 Server shutting down...\n");
+    printf("\n Server shutting down...\n");
     exit(0);
 }
 
@@ -52,7 +52,7 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    printf("🚀 Server listening on %s...\n", SOCKET_PATH);
+    printf("Server listening on %s...\n", SOCKET_PATH);
 
     while (1) {
         client_len = sizeof(client_addr);
@@ -65,7 +65,7 @@ int main() {
         pid_t pid = fork();
         if (pid == 0) {  // Child process handles client
             close(server_fd);
-            printf("✅ New client connected!\n");
+            printf(" New client connected!\n");
 
             // Ask for username
             memset(client_name, 0, 50);
